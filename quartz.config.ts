@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Islam",
-    pageTitleSuffix: " | Obsidian Islam",
+    pageTitle: "Adam",
+    pageTitleSuffix: " | Adam",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -73,9 +73,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
-    filters: [
-      Plugin.RemoveDrafts()
-    ],
+    filters: [Plugin.RemoveDrafts()],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
